@@ -1,0 +1,26 @@
+﻿<metro:MetroWindow x:Class="CGSSPacketDecryptor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CGSSPacketDecryptor"
+        mc:Ignorable="d"
+        xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
+        BorderBrush="{DynamicResource AccentColorBrush}"
+        BorderThickness="1"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        WindowTitleBrush="{DynamicResource MaterialDesignPaper}"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+        WindowStartupLocation="CenterScreen" 
+        TitleCharacterCasing="Normal" 
+        FontFamily="{materialDesign:MaterialDesignFont}"
+        Title="CGSSPacketDecoder" Height="450" Width="800" FontWeight="Normal" >
+    <Grid>
+        <TextBox x:Name="EncodedText" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="202" Height="413" TextChanged="EncodedText_TextChanged" SelectionBrush="{x:Null}" CaretBrush="{x:Null}"/>
+        <TextBox x:Name="DecodedText" HorizontalAlignment="Left" Margin="217,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="571" Height="413"/>
+
+    </Grid>
+</metro:MetroWindow>
